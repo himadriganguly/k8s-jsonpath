@@ -3,11 +3,13 @@
 <details>
   <summary>Click to expand!</summary>
 
-`kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'`
+```shell
+kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'
+```
 
 **Output**
 
-```
+```shell
 kubemaster NoSchedule
 kubenode01
 kubenode02
@@ -20,11 +22,13 @@ kubenode02
 <details>
   <summary>Click to expand!</summary>
 
-`kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}'`
+```shell
+kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}'
+```
 
 **Output**
 
-```
+```shell
 kubemaster      192.168.56.2
 kubenode01      192.168.56.3
 kubenode02      192.168.56.4

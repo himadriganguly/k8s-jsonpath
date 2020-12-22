@@ -38,14 +38,16 @@ cd k8s-jsonpath
 <details>
   <summary>Click to expand!</summary>
 
-`kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'`
+```shell
+kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'
+```
 
 **Output**
-[code block - '```']
+```shell
 kubemaster NoSchedule
 kubenode01
 kubenode02
-[code block - '```']
+```
 
 </details>
 ````
