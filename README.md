@@ -17,6 +17,11 @@ This repo contains sample **jsonpath** code related to **Kubernetes**.
 | `?()`              | Applies a filter (script) expression via static evaluation           |
 | `()`               | Script expression via static evaluation                              |
 
+## Index
+
+1. [Nodes](/nodes)
+2. [Pods](/pods)
+
 ## About Us
 
 k8s-jsonpath is maintained by:
