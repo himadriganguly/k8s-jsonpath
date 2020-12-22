@@ -19,7 +19,7 @@ This repo contains sample **jsonpath** code related to **Kubernetes**.
 
 ## About Us
 
-K8s is maintained by:
+k8s-jsonpath is maintained by:
 
 <table>
   <tr>
