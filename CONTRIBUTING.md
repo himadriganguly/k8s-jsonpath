@@ -42,7 +42,7 @@ cd k8s-jsonpath
 
 3. Create a new branch `git checkout -b MY_BRANCH_NAME`
 
-- Find an issue to work on or create a new issue. The issues are maintained at [k8s-jsonpath](https://github.com/himadriganguly/k8s-jsonpath/issues). You can pick up from a list of [good-first-issues](https://github.com/himadriganguly/k8s-jsonpath/good%20first%20issue).
+- Find an issue to work on or create a new issue. The issues are maintained at [k8s-jsonpath](https://github.com/himadriganguly/k8s-jsonpath/issues). You can pick up from a list of [good-first-issues](https://github.com/himadriganguly/k8s-jsonpath/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 - Claim your issue by commenting your intent to work on it to avoid duplication of efforts.
 - Fork the repository on **GitHub**.
 - Create a branch from where you want to base your work (usually master).
