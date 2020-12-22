@@ -30,10 +30,9 @@ kubectl get pods -o jsonpath='{range $.items[?(@.spec.nodeName=="kubenode01")]}{
 **Output**
 
 ```shell
-10.38.0.2
-10.32.0.3
-10.32.0.4
-10.38.0.1
+nginx-6799fc88d8-78mwd  kubenode01
+nginx-6799fc88d8-c7cpb  kubenode01
+test-iptables-cb64cc545-dn9t8   kubenode01
 ```
 
 </details>
