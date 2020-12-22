@@ -26,19 +26,29 @@ cd k8s-jsonpath
 - Serial number should be there
 - Description of the code and the K8s version
 - Then the code under code block
+- And also the output
+
+`Note:- The minimum version of K8s should be v1.19.0`
 
 **Example**
 
-```
-1. Get the name of all the nodes and their taint effect if any. <br/>**K8s** version used - **v1.19.0**
+````
+1. Get the name of all the nodes and their taint effect if any. <br/>**K8s** version used - **v1.19.5**
 
 <details>
   <summary>Click to expand!</summary>
 
 `kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'`
 
+**Output**
+[code block - '```']
+kubemaster NoSchedule
+kubenode01
+kubenode02
+[code block - '```']
+
 </details>
-```
+````
 
 3. Create a new branch `git checkout -b MY_BRANCH_NAME`
 
