@@ -4,7 +4,7 @@
   <summary>Click to expand!</summary>
 
 ```shell
-kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}'
+kubectl get nodes -o jsonpath='{range $.items[*]} {.metadata.name} {.spec.taints[*].effect}{"\n"}{end}'
 ```
 
 **Output**
@@ -23,7 +23,7 @@ kubenode02
   <summary>Click to expand!</summary>
 
 ```shell
-kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}'
+kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}{end}'
 ```
 
 **Output**
