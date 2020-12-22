@@ -33,4 +33,4 @@ Please see our [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 ## LICENSE
 
-k8s-jsonpath is GNU GPL3 licensed. See the LICENSE file for details.
+**k8s-jsonpath** is **GNU GPL3** licensed. See the LICENSE file for details.

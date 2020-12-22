@@ -1,6 +1,6 @@
 # Contributing
 
-k8s-jsonpath is a GPL GNU3 Licensed project and uses the standard GitHub pull requests process to review and accept contributions.
+**k8s-jsonpath** is a **GPL GNU3** Licensed project and uses the standard GitHub pull requests process to review and accept contributions.
 
 There are several areas of **k8s-jsonpath** that you could help the project to contribute. This is just in the initial state of the project and together **WE** can make it large.
 
