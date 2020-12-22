@@ -14,3 +14,20 @@ kubenode02
 ```
 
 </details>
+
+2. Get the name of the all the nodes and their corresponding InternalIP address. <br/>**K8s** version used - **v1.19.5**
+
+<details>
+  <summary>Click to expand!</summary>
+
+`kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}'`
+
+**Output**
+
+```
+kubemaster      192.168.56.2
+kubenode01      192.168.56.3
+kubenode02      192.168.56.4
+```
+
+</details>
