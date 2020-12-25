@@ -36,3 +36,20 @@ test-iptables-cb64cc545-dn9t8   kubenode01
 ```
 
 </details>
+
+3. Get all the pods that are using specific configmap. Change the configmap name according to your requirement in `@.spec.volumes[*].configMap.name=="test-config"` <br/>**K8s** version used - **v1.19.2**
+
+<details>
+  <summary>Click to expand!</summary>
+
+```shell
+kubectl get pods -o jsonpath='{range .items[?(@.spec.volumes[*].configMap.name=="test-config")]}{.metadata.name}{"\t"}{.spec.volumes[*].configMap.name}{"\n"}{end}'
+```
+
+**Output**
+
+```shell
+test-pod-cm     test-config
+```
+
+</details>
