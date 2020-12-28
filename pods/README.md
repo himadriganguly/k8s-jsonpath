@@ -53,3 +53,20 @@ test-pod-cm     test-config
 ```
 
 </details>
+
+4. Get all the pods that are using specific persistent volume claim. Change the pvc name according to your requirement in `@.spec.volumes[*].persistentVolumeClaim.claimName=="test-pvc"` <br/>**K8s** version used - **v1.19.5**
+
+<details>
+  <summary>Click to expand!</summary>
+
+```shell
+kubectl get pods -o jsonpath='{range .items[?(@.spec.volumes[*].persistentVolumeClaim.claimName=="test-pvc")]}{.metadata.name}{"\t"}{"\n"}{end}'
+```
+
+**Output**
+
+```shell
+test-pod-pvc
+```
+
+</details>
